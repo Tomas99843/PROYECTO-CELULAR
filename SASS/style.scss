@@ -1,0 +1,15 @@
+/*PAGES-SASS*/
+
+@use "PAGES-SASS/index";
+@use "PAGES-SASS/favorito";
+@use "PAGES-SASS/usuario";
+@use "PAGES-SASS/contacto_ubi";
+@use "PAGES-SASS/carrito";
+
+/*PRESETS*/
+
+@use "PRESETS/reset_body";
+@use "PRESETS/header";
+@use "PRESETS/main";
+@use "PRESETS/footer";
+@use "PRESETS/animacion_incial";
