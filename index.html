@@ -13,18 +13,20 @@
         <link rel="stylesheet" href="CSS/style.css">
     </head>
 <body id="body">
-        <button class="btn_animacion">
-          <svg
-            width="40px"
-            height="40px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#0092E4">
-            <path
-              d="M18.71,19.5C17.88,20.74,17,22,15.66,22s-1.77-.79-3.29-.79-2,.77-3.27.82S6.8,20.68,6,19.47c-1.71-2.47-3-7-1.26-10.08A4.88,4.88,0,0,1,8.82,6.88c1.28,0,2.5.87,3.29.87s2.26-1.07,3.81-.91a4.64,4.64,0,0,1,3.64,2,4.56,4.56,0,0,0-2.15,3.81,4.41,4.41,0,0,0,2.68,4,11.05,11.05,0,0,1-1.38,2.83M13,3.5A4.55,4.55,0,0,1,15.94,2a4.38,4.38,0,0,1-1,3.19,3.65,3.65,0,0,1-3,1.42A4.27,4.27,0,0,1,13,3.5Z"
-            ></path>
-          </svg>
-        </button>
+    <!-- Pantalla inicial con el logo y el texto -->
+  <div class="welcome-screen">
+    <div class="text-container">
+      <p class="welcome-text">Haz clic para conocer una nueva experiencia</p>
+    </div>
+    <button class="btn">
+      <svg width="80px" height="80px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#0092E4">
+        <path d="M18.71,19.5C17.88,20.74,17,22,15.66,22s-1.77-.79-3.29-.79-2,.77-3.27.82S6.8,20.68,6,19.47c-1.71-2.47-3-7-1.26-10.08A4.88,4.88,0,0,1,8.82,6.88c1.28,0,2.5.87,3.29.87s2.26-1.07,3.81-.91a4.64,4.64,0,0,1,3.64,2,4.56,4.56,0,0,0-2.15,3.81,4.41,4.41,0,0,0,2.68,4,11.05,11.05,0,0,1-1.38,2.83M13,3.5A4.55,4.55,0,0,1,15.94,2a4.38,4.38,0,0,1-1,3.19,3.65,3.65,0,0,1-3,1.42A4.27,4.27,0,0,1,13,3.5Z"></path>
+      </svg>
+    </button>
+  </div>
+
+
+      
     <header id="header">
         <nav class="navbar navbar-expand-lg bg-black fixed-top">
             <div class="container-fluid d-flex justify-content-between">
@@ -502,22 +504,15 @@
         </footer> 
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- ...existing code... -->
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
-              const button = document.querySelector(".btn_animacion");
+            const btn = document.querySelector('.btn');
+            const welcomeScreen = document.querySelector('.welcome-screen');
+            const mainContent = document.querySelector('.main-content');
         
-              // Verifica si la animación ya se mostró
-              if (!localStorage.getItem("animationShown")) {
-                // Mostrar el botón
-                button.style.display = "grid";
-        
-                // Ocultar después de 2 segundos
-                setTimeout(() => {
-                  button.style.display = "none";
-                  // Guardar estado en localStorage
-                  localStorage.setItem("animationShown", "true");
-                }, 2000);
-              }
+            btn.addEventListener('click', () => {
+              welcomeScreen.style.display = 'none'; // Oculta la pantalla de bienvenida
+              mainContent.style.display = 'block'; // Muestra el contenido principal
             });
           </script>
 </body>

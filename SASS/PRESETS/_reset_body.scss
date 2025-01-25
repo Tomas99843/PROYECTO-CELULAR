@@ -24,4 +24,49 @@ body {
     min-height: 100vh;
     width: 100%;
 }
-
+/* Pantalla inicial */
+.welcome-screen {
+    background-color: #000; /* Fondo negro */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que quede encima de todo */
+    flex-direction: column;
+  }
+  
+  .text-container {
+    margin-bottom: 20px; /* Espacio entre el texto y el botón */
+    text-align: center;
+  }
+  
+  .welcome-text {
+    color: #fff; /* Texto blanco */
+    font-size: 24px; /* Tamaño del texto */
+  }
+  
+  .welcome-screen .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50%;
+  }
+  
+  .welcome-screen .btn svg {
+    width: 80px; /* Aumentar el tamaño del logo */
+    height: 80px;
+    fill: #0092E4;
+    transition: transform 0.3s ease;
+  }
+  
+  .welcome-screen .btn:hover svg {
+    transform: scale(1.1); /* Efecto de agrandar al pasar el ratón */
+  }
