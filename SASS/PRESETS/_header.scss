@@ -1,16 +1,21 @@
+
 #header {
     grid-area: header;
-}
+    z-index: 10;/* Asegúrate de que esté por debajo del overlay */
+} 
+
 .headerLogo {
     width: 250px;
     height: 150px;
     margin-right: 20px;
 }
+
 .form-control {
     flex: 1;
     padding: 0.3rem 2.5rem 0.3rem 0.6rem;
     position: relative;
 }
+
 .search-icon {
     position: absolute;
     right: 1.6rem;
@@ -20,24 +25,30 @@
     text-decoration: none;
     pointer-events: auto;
 }
+
 .search-icon:hover {
     cursor: pointer;
 }
+
 .bi-search {
     color: var(--gray-color);
 }
+
 button.btn-outline-success {
     display: none;
 }
+
 .navbar-toggler i {
     color: var(--white-color);
     font-size: 24px;
 }
+
 .navbar-toggler:hover i,
 .navbar-toggler:focus i,
 .navbar-toggler:active i {
     color: var(--white-color);
 }
+
 @media (max-width: 768px) {
     .form-control {
         padding: 0.3rem 2rem 0.3rem 0.6rem;
@@ -47,8 +58,10 @@ button.btn-outline-success {
         right: 2.4rem;
     }
 }
+
 @media (max-width: 635px) {
     .search-icon {
         display: none;
     }
 }
+

@@ -375,3 +375,25 @@
         margin-bottom: 10px; /* Añade margen inferior para separación */
     }
 }
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Ajusta el grosor de la línea */
+    background-color: #fff; /* Cambia el color de la línea */
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
