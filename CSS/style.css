@@ -81,10 +81,6 @@ body {
   fill: #333333;
 }
 
-/* Estilos del navbar */
-/*#header {
-    grid-area: header;
-}*/
 #header {
   grid-area: header;
   z-index: 10; /* Asegúrate de que esté por debajo del overlay */
