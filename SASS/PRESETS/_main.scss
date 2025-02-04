@@ -64,6 +64,7 @@
     border: 1px solid var(--white-color);
     border-radius: var(--border-radius);
     margin: 20px auto;
+    width: 100%; /*Correccion sugerida por el tutor*/
 }
 .cardProduct {
     background-color: var(--white-color);
@@ -95,7 +96,7 @@
 .mapa,
 .formularioConsulta {
     flex: 1;
-    width: 540px;
+    width: 100%; /*Correccion sugerida por mi tutor*/
     height: 92%;
     margin: 20px 15px;
 }
