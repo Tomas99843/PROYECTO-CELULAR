@@ -94,6 +94,7 @@
 }
 .mapa,
 .formularioConsultaFavoritos {
+    gap:20px;
     flex: 1;
     height: 48%; /*92%*/
     margin: 10px 15px;
@@ -139,6 +140,7 @@
     .contenedorContacto {
         flex-direction: column;
         align-items: center;
+        padding:20px 10px;
     }
 
     .mapa,
@@ -389,9 +391,8 @@
     position: relative;
     display: inline-block;
     overflow: hidden;
-  }
-  
-  .nav-link::after {
+}
+.nav-link::after {
     content: '';
     position: absolute;
     width: 0;
@@ -400,9 +401,8 @@
     bottom: 0;
     left: 50%;
     transition: width 0.3s ease, left 0.3s ease;
-  }
-  
-  .nav-link:hover::after {
+} 
+.nav-link:hover::after {
     width: 100%;
     left: 0;
-  }
+}
