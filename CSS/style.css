@@ -120,6 +120,10 @@ button.btn-outline-success {
   display: none;
 }
 
+.navbar {
+  border-bottom: 1px solid white;
+}
+
 .navbar-toggler i {
   color: var(--white-color);
   font-size: 24px;
@@ -253,13 +257,20 @@ button.btn-outline-success {
 }
 
 .mapa,
-.formularioConsulta {
+.formularioConsultaFavoritos {
+  flex: 1;
+  height: 48%; /*92%*/
+  margin: 10px 15px;
+}
+
+.formularioConsultaUbicacion {
   flex: 1;
   height: 92%;
   margin: 20px 15px;
+  width: 100%;
 }
 
-.formularioConsulta {
+.formularioConsultaFavoritos, .formularioConsultaUbicacion {
   padding: 20px;
   background-color: var(--white-color);
   border-radius: var(--border-radius);
@@ -304,21 +315,22 @@ button.btn-outline-success {
     align-items: center;
   }
   .mapa,
-  .formularioConsulta {
+  .formularioConsultaUbicacion {
     max-width: 100%;
-    margin: 10px 0;
+    margin: 50px 0;
+    width: 100%;
   }
 }
 .tituloFavorito, .videoFavorito {
   border: 1px solid var(--white-color);
   border-radius: var(--border-radius);
   background-color: var(--white-color);
-  margin: 20px;
+  margin: 30px;
   padding: 10px;
 }
 
 .videoFavorito {
-  height: 90%;
+  height: 40%; /*90%*/
   width: 100%; /*correccion sugerida por el tutor*/
 }
 

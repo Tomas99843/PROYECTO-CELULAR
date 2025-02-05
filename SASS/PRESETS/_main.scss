@@ -93,12 +93,18 @@
     padding: 20px;
 }
 .mapa,
-.formularioConsulta {
+.formularioConsultaFavoritos {
     flex: 1;
-    height: 92%;
-    margin: 20px 15px;
+    height: 48%; /*92%*/
+    margin: 10px 15px;
 }
-.formularioConsulta {
+.formularioConsultaUbicacion {
+    flex: 1;
+    height:92%;
+    margin: 20px 15px;
+    width: 100%;
+}
+.formularioConsultaFavoritos, .formularioConsultaUbicacion {
     padding: 20px;
     background-color: var(--white-color);
     border-radius: var(--border-radius);
@@ -136,22 +142,22 @@
     }
 
     .mapa,
-    .formularioConsulta {
+    .formularioConsultaUbicacion {
         max-width: 100%;
-        margin: 10px 0;
+        margin: 50px 0;
+        width: 100%;
     }
 }
 .tituloFavorito , .videoFavorito {
     border: 1px solid var(--white-color);
     border-radius: var(--border-radius);
     background-color: var(--white-color);
-    margin: 20px;
+    margin: 30px;
     padding: 10px;
 } 
 .videoFavorito{
-    height: 90%;
+    height: 40%; /*90%*/
     width: 100%; /*correccion sugerida por el tutor*/
-    
 }
 .tarjetaFavorito {
     display: flex;
