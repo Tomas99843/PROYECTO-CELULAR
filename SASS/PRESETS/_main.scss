@@ -140,11 +140,12 @@
     .contenedorContacto {
         flex-direction: column;
         align-items: center;
-        padding:20px 10px;
+
     }
 
     .mapa,
     .formularioConsultaUbicacion {
+        height: 50%;
         max-width: 100%;
         margin: 50px 0;
         width: 100%;
